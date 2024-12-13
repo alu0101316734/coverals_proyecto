@@ -5,6 +5,9 @@ const config: Config = {
   testEnvironment: 'node', // Entorno para pruebas en Node.js
   verbose: true,          // Muestra resultados detallados
   moduleFileExtensions: ['ts', 'js'], // Archivos soportados
+  coverageDirectory: './coverage',
+  collectCoverage: true,
+  coverageReporters: ['text', 'text-summary', 'lcov'],
   testMatch: ['**/*.test.ts'], // Busca archivos .test.ts
 
 };
