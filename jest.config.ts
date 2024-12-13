@@ -4,6 +4,7 @@ const config: Config = {
   preset: 'ts-jest', // Usa ts-jest como preset
   testEnvironment: 'node', // Entorno para pruebas en Node.js
   verbose: true,          // Muestra resultados detallados
+  coverageDirectory: './server/coverage',
   moduleFileExtensions: ['ts', 'js'], // Archivos soportados
   testMatch: ['**/*.test.ts'], // Busca archivos .test.ts
 };
