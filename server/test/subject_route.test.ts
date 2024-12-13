@@ -35,7 +35,7 @@ describe('Probando la api rest de subjects',() =>{
     test('test POST subject error 500', async () =>{
         const response = await request(app)
         .post('/subject/')
-        .send({ name: 'Math',type_education: 'School' });
+        .send({type_education: 'School' });
         expect(response.status).toBe(500);
     })
     test('test GET subject succesfull', async () =>{
