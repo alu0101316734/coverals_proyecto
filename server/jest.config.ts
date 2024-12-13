@@ -6,6 +6,7 @@ const config: Config = {
   verbose: true,          // Muestra resultados detallados
   moduleFileExtensions: ['ts', 'js'], // Archivos soportados
   testMatch: ['**/*.test.ts'], // Busca archivos .test.ts
+
 };
 
 export default config;

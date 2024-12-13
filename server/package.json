@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand",
     "dev": "nodemon --watch src --ext ts --exec ts-node ./server.ts",
     "start": "ts-node ./server",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
