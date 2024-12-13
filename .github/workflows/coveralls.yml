@@ -34,7 +34,7 @@ jobs:
     - name: Generating coverage information
       working-directory: ./server
       run: npm run coverage
-    -name: coverralls issue
+    - name: coverralls issue
       run: COVERALLS_DEBUG=1 cat coverage/lcov.info | npx coveralls
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v2.2.3
